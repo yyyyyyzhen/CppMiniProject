@@ -7,7 +7,7 @@ int main( void ){
     /*常数 FILENAME 和 N 在 Game.h 文件中 */
     int nb = numberWords( FILENAME ); // 获得单词的个数
     Word list[nb]; // 声明一个 Word 型数组用来存放单词
-    readWords( FILENAME, list, nb ); // 将单词存入 list 数组
+    readWords( FILENAME, list ); // 将单词存入 list 数组
 
     Point ** mat = generateMatrix( N ); // 生成游戏用的矩阵并保存在 mat 中
     Command cmd; // 声明一个用于保存用户指令的变量 cmd

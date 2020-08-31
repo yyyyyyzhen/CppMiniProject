@@ -5,7 +5,7 @@
 
 using namespace std;
 
-#define N 6 // 矩阵的大小为 NxN
+#define N 10 // 矩阵的大小为 NxN
 #define FILENAME "F:\\CppMiniProject\\list.txt" // 存放单词的文件
 
 typedef struct Point { // 矩阵中每个点都是 Point 类型的
@@ -30,10 +30,9 @@ typedef struct Command { // 用户输入的指令格式例如：3 v (2,3)
 /* 从文件中读取单词
     @ fName：文件名
     @ list：空的单词（Word）列表
-    @ nb：单词的数量
     @ 无返回值
 */
-void readWords( string fName, Word * list, int nb );
+void readWords( string fName, Word * list );
 
 /* 获得单词的数量
     @ fName：文件名

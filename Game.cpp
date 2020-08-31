@@ -7,7 +7,7 @@
 
 using namespace std;
 
-void readWords( string fName, Word * list, int nb ){
+void readWords( string fName, Word * list ){
     ifstream infile;
     int counter = 0;
     infile.open( fName, ios :: in );
@@ -16,7 +16,7 @@ void readWords( string fName, Word * list, int nb ){
         exit(1);
     }
     else{
-        while( !infile.eof( ) && counter != nb ){
+        while( !infile.eof( ) ){
             getline( infile, list[counter].str );
             list[counter].num = counter + 1;
             list[counter].flag = false;
